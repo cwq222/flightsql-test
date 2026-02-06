@@ -16,7 +16,7 @@ DORIS_USER=$(grep "^doris.username=" "$DORIS_PROPS" | cut -d'=' -f2)
 DORIS_PASSWORD=$(grep "^doris.password=" "$DORIS_PROPS" | cut -d'=' -f2)
 
 # 默认查询
-QUERY="${1:-SELECT * FROM test_db.user_visit LIMIT 100}"
+QUERY="${1:-SELECT * FROM test_db.test_table LIMIT 100}"
 
 echo "=========================================="
 echo "Arrow Flight SQL Test (Local)"
@@ -50,7 +50,7 @@ fi
   --conf arrow.user="$DORIS_USER" \
   --conf arrow.password="$DORIS_PASSWORD" \
   --conf arrow.query="$QUERY" \
-  --class com.portofino.arrow.ArrowFlightSQLTest \
+  --class com.portofino.arrow.ArrowFlightSQLSuite \
   "$JAR_FILE"
 
 echo

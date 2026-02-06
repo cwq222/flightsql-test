@@ -33,7 +33,7 @@ object ArrowFlightSQLSuite {
     val port = System.getProperty("arrow.port", "8070")
     val user = System.getProperty("arrow.user", "root")
     val password = System.getProperty("arrow.password", "")
-    val query = System.getProperty("arrow.query", "SELECT * FROM test_db.user_visit")
+    val query = System.getProperty("arrow.query", "SELECT * FROM test_db.test_table")
 
     try {
 

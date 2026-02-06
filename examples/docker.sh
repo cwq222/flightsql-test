@@ -48,7 +48,7 @@ docker run --rm \
   --conf arrow.user="$DORIS_USER" \
   --conf arrow.password="$DORIS_PASSWORD" \
   --conf arrow.query="$QUERY" \
-  --class com.portofino.arrow.test.ArrowFlightSQLTest \
+  --class com.portofino.arrow.test.ArrowFlightSQLSuite \
   /opt/spark/jars/arrow-flight-sql-test.jar
 
 echo
