@@ -18,9 +18,7 @@ import scala.collection.JavaConverters._
 
 /**
  * Arrow Flight SQL 测试程序
- *
  * 测试通过 Arrow Flight SQL JDBC 驱动、ADBC + FlightSQL协议 连接 Doris 并读取数据
- *
  * @author jiangxintong@chinamobile.com 2026/1/28
  */
 object ArrowFlightSQLSuite {
