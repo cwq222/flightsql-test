@@ -29,11 +29,11 @@ object ArrowFlightSQLSuite {
     println("=" * 60)
 
     // 直接定义参数，不再依赖 SparkSession
-    val host = System.getProperty("arrow.host", "doris-fe")
+    val host = System.getProperty("arrow.host", "127.0.0.1")
     val port = System.getProperty("arrow.port", "8070")
     val user = System.getProperty("arrow.user", "root")
     val password = System.getProperty("arrow.password", "")
-    val query = System.getProperty("arrow.query", "SELECT * FROM test_db.test_table")
+    val query = System.getProperty("arrow.query", "SELECT * FROM test_db.user_visit")
 
     try {
 
